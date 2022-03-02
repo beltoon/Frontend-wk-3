@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@100;300&display=swap');
+
+/* 1. Global Styles */
+
+
+
+*{
+    box-sizing: border-box;
+    max-width: 800px;
+    margin:auto;
+    }
+
+img {
+    max-width: 400px;
+}
+
+li  {
+    list-style-type: none;
+}
+
+/* Color */
+:root {
+    --paars: #5722CD;
+    --wit: #fff;
+    --lichtgrijs: #F3F6F9;
+    --grijs: #7A7A7A;
+    --roze: #ED4385;
+}
+
+/* 2. Typography */
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+}
+
+p{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h5 {
+    margin: 1em;
+}
+
+h4 {
+    font-size: x-small;
+    padding: 0.6em 0;
+}
+
+h5 {
+    font-family: Roboto;
+}
+
+h2 {
+    color: var(--paars);
+    margin: 1em;
+}
+
+
+/* 3. Layout */
+
+.content-container{
+    padding: 30px 0;
+    text-align: center;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto !important;
+    float: none !important;
+    /*align-items: center;*/
+}
+
+/*.squiggle {*/
+/*    height: 30px;*/
+/*    width: 30px;*/
+/*    background-color: red;*/
+/*    position: absolute;*/
+/*    left: calc(50% - 15px);*/
+/*    bottom: 0;*/
+/*    z-index: 1;*/
+/*}*/
+
+
+button  {
+    text-transform: uppercase;
+    border-style: none;
+    color: var(--wit);
+    background-color: var(--roze);
+    font-size: xx-small;
+    border-radius: 25px;
+    padding: 1em;
+    margin: 2em;
+}
+
+/*line {*/
+/*    position: absolute;*/
+/*    border-bottom: 30px solid red;*/
+/*    border-right: 100vw solid transparent;*/
+
+
+/* 4. Areas */
+
+/* 4.1 nav */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 30px;
+    padding-top:10px
+}
+
+/* 4.2 Header */
+
+header {
+
+}
+.header-container{
+    color: var(--wit);
+    background-color: var(--paars);
+}
+
+/* 4.3 Projects */
+
+.projects-container {
+    /*display: flex;*/
+    display: block;
+    /*flex-wrap: wrap;*/
+    padding: 30px;
+    background-color: var(--lichtgrijs);
+    max-width: 800px;
+    flex-grow: 1;
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+.project-img {
+
+    filter: drop-shadow(0 10px 4px darkgrey);
+    width: auto;
+    max-height: 100%;
+    object-fit: scale-down;
+    min-width: 300px;
+    margin: 5px;
+}
+
+.projects-container > article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.projects-container > article > div > p {
+    margin: 30px 0;
+    max-width: 18em;
+}
+
+.projects-container > article > div > a {
+    font-weight: bolder;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-size: xx-small;
+    text-decoration: none;
+    color:var(--paars);
+}
+
+.article-left {
+    flex-direction: row;
+    padding-left: 10%;
+}
+
+.article-right {
+    flex-direction: row-reverse;
+    padding-right: 30px;
+    margin: 50px 0;
+}
+
+/* 4.4 Services */
+.service-container {
+    justify-content: space-between;
+    vertical-align: baseline;
+    padding: 30px;
+    background-color: var(--wit);
+    max-width: 750px;
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+.icon {
+    height: 2em;
+    fill: var(--paars);
+}
+
+.service-container > article > div {
+    display: inline-block;
+    vertical-align:middle;
+    /*max-height: 13.5em;*/
+    height: 200px;
+    width: 12.5em;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid var(--paars);
+}
+
+.service-container > article > div > p {
+    color: var(--grijs);
+    font-size: 0.55em;
+    vertical-align: top;
+}
+
+.form-container {
+    color: var(--wit);
+    background-color: var(--paars);
+    display: flex;
+
+    padding: 30px 0;
+    text-align: center;
+
+}
+
+.form-container > article > p {
+    padding-bottom: 30px;
+}
+
+.form-flex > li {
+    max-width: 100%;
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: var(--wit);
+    background-color: black;
+}
+
+footer > p {
+    font-size: 8px;
+    padding: 10px;
+}
+
+#message-field {
+    height: 100px;
+}
+
