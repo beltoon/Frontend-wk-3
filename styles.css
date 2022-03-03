@@ -36,6 +36,7 @@ h1, h2, h3, h4 {
 p{
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 li {
@@ -44,7 +45,8 @@ li {
 }
 
 h1, h5 {
-    margin: 1em;
+    margin: 1em 3em;
+
 }
 
 h4 {
@@ -58,7 +60,7 @@ h5 {
 
 h2 {
     color: var(--paars);
-    margin: 1em;
+    margin: 1em 3emg;
 }
 
 
@@ -68,7 +70,6 @@ h2 {
     padding: 30px 0;
     text-align: center;
     justify-content: center;
-    max-width: 700px;
     margin: 0 auto !important;
     float: none !important;
     /*align-items: center;*/
@@ -92,9 +93,9 @@ button  {
     background-color: var(--roze);
     font-size: xx-small;
     border-radius: 25px;
-    padding: 1em;
+    padding: 1em 3em;
     margin: 2em;
-}
+ }
 
 /*line {*/
 /*    position: absolute;*/
@@ -106,9 +107,11 @@ button  {
 
 /* 4.1 nav */
 nav {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
+    margin: 0 !important;
     justify-content: flex-end;
+
     gap: 20px;
     padding-right: 30px;
     padding-top:10px
@@ -122,15 +125,36 @@ header {
 .header-container{
     color: var(--wit);
     background-color: var(--paars);
+    position: relative;
+}
+
+.header-container img {
+    position: absolute;
+    top: 95%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+
+    /*left: 0;*/
+    /*right: 0;*/
+    /*text-align: center;*/
+    /*position: absolute;*/
+    width: 50px;
+}
+
+.header-container button {
+    margin-bottom: 10em;
 }
 
 /* 4.3 Projects */
 
 .projects-container {
     /*display: flex;*/
+
     display: block;
     /*flex-wrap: wrap;*/
-    padding: 30px;
+    padding-top: 30px;
     background-color: var(--lichtgrijs);
     max-width: 800px;
     flex-grow: 1;
@@ -141,25 +165,30 @@ header {
 .project-img {
 
     filter: drop-shadow(0 10px 4px darkgrey);
-    width: auto;
-    max-height: 100%;
+    /*width: auto;*/
+    /*max-height: 100%;*/
     object-fit: scale-down;
     min-width: 300px;
-    margin: 5px;
+    margin: 2em;
 }
 
 .projects-container > article {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-.projects-container > article > div > p {
-    margin: 30px 0;
+.projects-container div {
+    padding: 1em;
+}
+
+.projects-container p {
+    margin: 10% 0;
     max-width: 18em;
 }
 
-.projects-container > article > div > a {
+.projects-container a {
     font-weight: bolder;
     font-family: Roboto;
     text-transform: uppercase;
@@ -170,23 +199,19 @@ header {
 
 .article-left {
     flex-direction: row;
-    padding-left: 10%;
 }
 
 .article-right {
     flex-direction: row-reverse;
-    padding-right: 30px;
-    margin: 50px 0;
+    /*margin: 30px 0;*/
 }
 
 /* 4.4 Services */
 .service-container {
-    justify-content: space-between;
-    vertical-align: baseline;
+    text-align: center;
     padding: 30px;
     background-color: var(--wit);
-    max-width: 750px;
-    margin: 0 auto !important;
+    margin: 0 !important;
     float: none !important;
 }
 
@@ -198,6 +223,7 @@ header {
 .service-container > article > div {
     display: inline-block;
     vertical-align:middle;
+
     /*max-height: 13.5em;*/
     height: 200px;
     width: 12.5em;
@@ -206,7 +232,7 @@ header {
     border: 1px solid var(--paars);
 }
 
-.service-container > article > div > p {
+.service-container p {
     color: var(--grijs);
     font-size: 0.55em;
     vertical-align: top;
@@ -216,19 +242,34 @@ header {
     color: var(--wit);
     background-color: var(--paars);
     display: flex;
-
-    padding: 30px 0;
-    text-align: center;
+    /*margin: unset !important;*/
+    /*padding: 30px 0;*/
+    text-align: left;
 
 }
 
-.form-container > article > p {
+.form-container p {
     padding-bottom: 30px;
 }
 
-.form-flex > li {
-    max-width: 100%;
-    text-align: left;
+.form-flex label {
+    display: flex;
+}
+
+.form-flex button {
+    margin-bottom: 0;
+}
+
+#name-field {
+    width: 100%;
+}
+
+#email-field {
+    width: 100%;
+}
+
+#message-field {
+    width: 100%;
 }
 
 footer {
