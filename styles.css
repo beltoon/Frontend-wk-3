@@ -70,9 +70,6 @@ h3 {
 .content-container{
     padding: 30px 0;
     text-align: center;
-    /*justify-content: center;*/
-    /*margin: 0 auto !important;*/
-    /*float: none !important;*/
 }
 
 button  {
@@ -92,7 +89,6 @@ button  {
 nav {
     display: flex !important;
     flex-direction: row;
-    /*margin: 0 !important;*/
     justify-content: flex-end;
     gap: 20px;
     padding-right: 30px;
@@ -109,11 +105,7 @@ nav a:visited {
     color: white;
 }
 
-/*a:visited {*/
-/*    text-decoration: none;*/
-
 /* 4.2 Header */
-
 header {
 
 }
@@ -131,11 +123,6 @@ header {
 
     transform: translate(-50%, -50%); /* This is a shorthand of
                                          translateX(-50%) and translateY(-50%) */
-
-    /*left: 0;*/
-    /*right: 0;*/
-    /*text-align: center;*/
-    /*position: absolute;*/
     width: 50px;
 }
 
@@ -157,15 +144,11 @@ header {
 .projects-container {
     background-color: var(--lichtgrijs);
     flex-grow: 1;
-    /*margin: 0 auto !important;*/
-    /*float: none !important;*/
 }
 
 .project-img {
 
     filter: drop-shadow(0 10px 4px darkgrey);
-    /*width: auto;*/
-    /*max-height: 100%;*/
     object-fit: scale-down;
     min-width: 300px;
     margin: 2em;
@@ -194,7 +177,6 @@ h3 + img {
 
 .projects-container a {
     font-weight: bolder;
-    font-family: Roboto;
     text-transform: uppercase;
     font-size: xx-small;
     text-decoration: none;
@@ -211,7 +193,6 @@ h3 + img {
 
 .article-right {
     flex-direction: row-reverse;
-    /*margin: 30px 0;*/
 }
 
 /* 4.4 Services */
@@ -219,9 +200,8 @@ h3 + img {
     display: flex;
     position: relative;
     z-index: 1;
-    /*text-align: center;*/
+    text-align: center;
     padding: 30px;
-    /*background-color: var(--wit);*/
     margin: 0 !important;
     float: none !important;
 }
@@ -235,7 +215,6 @@ h3 + img {
     display: inline-block;
     vertical-align:middle;
     text-align: start;
-    /*max-height: 13.5em;*/
     height: 240px;
     width: 14em;
     padding: 20px;
@@ -254,19 +233,7 @@ h3 + img {
     color: var(--wit);
     background: rgb(77,29,182);
     background: linear-gradient(36deg, rgba(77,29,182,1) 0%, rgba(43,11,112,1) 100%);
-        /*background-color: var(--paars);*/
     display: flex;
-    /*margin: unset !important;*/
-    /*padding: 30px 0;*/
-    /*text-align: left;*/
-}
-
-@media only screen and (min-width: 600px) {
-    .schuin2 {
-        position: absolute;
-        border-right: 800px solid transparent;
-        border-top: 20px solid var(--wit);
-           }
 }
 
 .form-container p {
