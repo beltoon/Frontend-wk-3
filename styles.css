@@ -2,8 +2,6 @@
 
 /* 1. Global Styles */
 
-
-
 *{
     box-sizing: border-box;
     max-width: 800px;
@@ -63,28 +61,20 @@ h2 {
     margin: 1em 3em;
 }
 
+h3 {
+    margin: 10% 0;
+}
+
 
 /* 3. Layout */
 
 .content-container{
     padding: 30px 0;
     text-align: center;
-    justify-content: center;
-    margin: 0 auto !important;
-    float: none !important;
-    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*margin: 0 auto !important;*/
+    /*float: none !important;*/
 }
-
-/*.squiggle {*/
-/*    height: 30px;*/
-/*    width: 30px;*/
-/*    background-color: red;*/
-/*    position: absolute;*/
-/*    left: calc(50% - 15px);*/
-/*    bottom: 0;*/
-/*    z-index: 1;*/
-/*}*/
-
 
 button  {
     text-transform: uppercase;
@@ -97,25 +87,31 @@ button  {
     margin: 2em;
  }
 
-/*line {*/
-/*    position: absolute;*/
-/*    border-bottom: 30px solid red;*/
-/*    border-right: 100vw solid transparent;*/
-
-
 /* 4. Areas */
 
 /* 4.1 nav */
 nav {
     display: flex !important;
     flex-direction: row;
-    margin: 0 !important;
+    /*margin: 0 !important;*/
     justify-content: flex-end;
-
     gap: 20px;
     padding-right: 30px;
     padding-top:10px
 }
+
+nav a:link {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/*a:visited {*/
+/*    text-decoration: none;*/
 
 /* 4.2 Header */
 
@@ -124,11 +120,12 @@ header {
 }
 .header-container{
     color: var(--wit);
-    background-color: var(--paars);
+    background: linear-gradient(133deg, rgba(77,29,182,1) 0%, rgba(43,11,112,1) 100%);
     position: relative;
 }
 
 .header-container img {
+    z-index: 1;
     position: absolute;
     top: 95%;  /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
@@ -147,19 +144,22 @@ header {
     margin-bottom: 10em;
 }
 
+@media only screen and (min-width: 600px) {
+    .schuin {
+        position: absolute;
+        bottom: -1px;
+        border-left: 800px solid transparent;
+        border-bottom: 20px solid var(--wit);
+    }
+}
+
 /* 4.3 Projects */
 
 .projects-container {
-    /*display: flex;*/
-
-    display: block;
-    /*flex-wrap: wrap;*/
-    padding-top: 30px;
     background-color: var(--lichtgrijs);
-    max-width: 800px;
     flex-grow: 1;
-    margin: 0 auto !important;
-    float: none !important;
+    /*margin: 0 auto !important;*/
+    /*float: none !important;*/
 }
 
 .project-img {
@@ -172,10 +172,15 @@ header {
     margin: 2em;
 }
 
+h3 + img {
+    width: 50px;
+    margin: 10px 0px;
+}
+
 .projects-container > article {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: center;
   }
 
@@ -195,6 +200,10 @@ header {
     font-size: xx-small;
     text-decoration: none;
     color:var(--paars);
+}
+
+.link-effect:hover {
+
 }
 
 .article-left {
@@ -223,10 +232,10 @@ header {
 .service-container > article > div {
     display: inline-block;
     vertical-align:middle;
-
+    text-align: start;
     /*max-height: 13.5em;*/
-    height: 200px;
-    width: 12.5em;
+    height: 240px;
+    width: 14em;
     padding: 20px;
     margin: 10px;
     border: 1px solid var(--paars);
@@ -234,18 +243,28 @@ header {
 
 .service-container p {
     color: var(--grijs);
-    font-size: 0.55em;
+    font-size: 0.7em;
     vertical-align: top;
 }
 
 .form-container {
+    position: relative;
     color: var(--wit);
-    background-color: var(--paars);
+    background: rgb(77,29,182);
+    background: linear-gradient(36deg, rgba(77,29,182,1) 0%, rgba(43,11,112,1) 100%);
+        /*background-color: var(--paars);*/
     display: flex;
     /*margin: unset !important;*/
     /*padding: 30px 0;*/
     text-align: left;
+}
 
+@media only screen and (min-width: 600px) {
+    .schuin2 {
+        position: absolute;
+        border-right: 800px solid transparent;
+        border-top: 20px solid var(--wit);
+           }
 }
 
 .form-container p {
@@ -254,6 +273,7 @@ header {
 
 .form-flex label {
     display: flex;
+    padding-top: 10px;
 }
 
 .form-flex button {
@@ -268,8 +288,9 @@ header {
     width: 100%;
 }
 
-#message-field {
+textarea {
     width: 100%;
+    height: 100px;
 }
 
 footer {
@@ -286,5 +307,6 @@ footer > p {
 
 #message-field {
     height: 100px;
+    text-align: start;
 }
 

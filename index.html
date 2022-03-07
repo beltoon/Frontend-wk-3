@@ -11,19 +11,20 @@
 <!--HEADER-->
 <header class = "header-container">
     <nav>
-        <p>Case Studies</p>
-        <p>Services</p>
-        <p>Contact Us</p>
+        <p><a href="#projects">Case Studies</a></p>
+        <p><a href="#service">Services</a></p>
+        <p><a href="#contact">Contact Us</a></p>
     </nav>
 
     <div class = "content-container">
         <h1>Your website is an investment in the success of your business.</h1>
 
         <h5>We are here to help you succeed. Let's work together</h5>
-        <button>Let's work together</button>
+        <a href="#contact"><button>Let's work together</button></a>
         <br>
         <img src="Screenshots/squiggle_line_stripe.svg" alt="squiggle">
     </div>
+    <div class="schuin"></div>
 
 <!--    <div class = "squiggle"></div>-->
 </header>
@@ -42,12 +43,13 @@
     </div>
 </section>
 
-<section class = "projects-container">
-    <article class = "article-left">
+<section id="projects" class= "projects-container">
+    <article class= "article-left">
         <div>
             <h3>Rolling Stone</h3>
+            <img src="Screenshots/squiggle_line.svg" alt="squiggle line">
             <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.</p>
-            <a href="link here">view project</a>
+            <a class="link-effect" href="link here">view project</a>
         </div>
             <img class="project-img" src="Screenshots/work-image-01.jpeg" alt="Rolling Stones">
     </article>
@@ -55,8 +57,9 @@
     <article class = "article-right">
         <div>
             <h3>Variety</h3>
+            <img src="Screenshots/squiggle_line.svg" alt="squiggle line">
             <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</p>
-            <a href="link here">view project</a>
+            <a class="link-effect" href="link here">view project</a>
         </div>
             <img class="project-img" src="Screenshots/work-image-02.jpeg" alt="Variety">
     </article>
@@ -64,14 +67,15 @@
     <article class = "article-left">
         <div>
             <h3>Worth</h3>
+            <img src="Screenshots/squiggle_line.svg" alt="squiggle line">
             <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
-            <a href="link here">view project</a>
+            <a class="link-effect" href="link here">view project </a>
         </div>
             <img class="project-img" src="Screenshots/work-image-03.jpeg" alt="Variety worth">
     </article>
 </section>
 
-<section class = "service-container">
+<section id="service" class= "service-container">
     <article>
         <div>
             <img class="icon" src="Screenshots/icon_web-design.svg" alt="web design">
@@ -107,28 +111,30 @@
 </section>
 
 <section class="form-container">
+    <div class="schuin2"></div>
     <article class = content-container>
-        <h1>Let's work together</h1>
+        <h1 id="contact">Let's work together</h1>
         <p> Have a question? Need a quote? Let us know!</p>
 
         <form class="form-flex" onsubmit="hier-hebben-we-js-voor-nodig">
             <li>
-            <label for="name-field">Naam</label>
+            <label for="name-field">Name:</label>
             </li>
             <li>
             <input type="text" id="name-field"/>
             </li>
             <li>
-            <label for="email-field">Email</label>
+            <label for="email-field">Email:</label>
             </li>
             <li>
             <input type="email" id="email-field"/>
             </li>
             <li>
-            <label for="message-field">Message</label>
+            <label>Message:</label>
             </li>
             <li>
-            <input type="text" id="message-field"/>
+            <textarea cols="10"></textarea>
+<!--            <input type="text" id="message-field"/>-->
             </li>
             <button type="submit">Send</button>
         </form>
